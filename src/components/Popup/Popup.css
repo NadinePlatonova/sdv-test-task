@@ -1,0 +1,124 @@
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);;
+    backdrop-filter: blur(7.5px);
+    visibility: hidden;
+    /* visibility: visible; */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.popup__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    width: 66%;
+    padding: 150.5px 0;
+}
+
+.popup__close {
+    background-image: url(../../images/close-icon.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    top: 45.71px;
+    right: 45.1px;
+    width: 28.53px;
+    height: 28.53px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+    padding: 0;
+  }
+
+  .popup__title {
+    width: 620px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .popup__form {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup__text {
+    width: 620px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid rgba(22.7, 22.7, 22.7, 0.5);
+    padding: 0 0 5px 0;
+    margin: 46px 0 0;
+    box-sizing: border-box;
+  }
+
+  .popup__text:last-of-type {
+    margin: 68px 0 0;
+  }
+
+  .popup__text::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #B3B3B3;
+  }
+
+  .popup__submit-button {
+    width: 387px;
+    height: 81px;
+    background: linear-gradient(238.08deg, #D4208C 0.42%, #E61726 82.5%);
+    border-radius: 10px;
+    border: none;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    margin: 46px 0 0;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+
+  .popup__submit-button:hover {
+    opacity: 0.8;
+    transition: opacity 0.1s ease;
+  }
