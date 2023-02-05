@@ -31,6 +31,9 @@
 }
 
 .main__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding: 52.79px 0 0;
     margin: 0;
     box-sizing: border-box;
@@ -90,4 +93,124 @@
 .main__button:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1294px) {
+    .main__section {
+        width: 440px;
+    }
+
+    .main__title {
+        font-size: 62px;
+    }
+
+    .main__list-item {
+        gap: 15px;
+    }
+
+    .main__list-item-number {
+        font-size: 44px;
+    }
+
+    .main__list-item-text {
+        font-size: 32px;
+        line-height: 227.18%;
+    }
+}
+
+@media screen and (max-width: 1206px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .main__picture {
+        padding: 24.48px 0 0;
+    }
+
+    .main__section {
+        padding: 20.74px 0 0;
+    }
+
+    .main__list {
+        padding: 22.33px 0 0;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main__picture {
+        max-width: 524px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main__picture {
+        max-width: 353px;
+    }
+
+    .main__title {
+        font-size: 48px;
+    }
+
+    .main__section {
+        width: 385px;
+    }
+
+    .main__list-item-number {
+        font-size: 32px;
+        width: 29px;
+        height: 60px;
+        line-height: 57px;
+    }
+
+    .main__list-item-text {
+        font-size: 22px;
+        line-height: 272.18%;
+    }
+
+    .main__list-item-text {
+        font-size: 22px;
+        line-height: 272.18%;
+    }
+
+    .main__button {
+        font-size: 20px;
+        line-height: 31px;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .main__picture {
+        width: 290px;
+    }
+
+    .main__section {
+        width: 290px;
+    }
+
+    .main__title {
+        font-size: 35px;
+    }
+
+    .main__list-item-number {
+        font-size: 33.0228px;
+        line-height: 45px;
+        width: 28px;
+        height: 45px;
+    }
+    
+    .main__list-item-text {
+        font-size: 18.82px;
+    }
+
+    .main__button {
+        font-size: 13.8095px;
+        line-height: 19px;
+    }
+
+    .main__list-item {
+        gap: 10px;
+    }
 }

@@ -1,0 +1,30 @@
+.popup__container_tooltip {
+    padding: 220.5px 0 288.5px;
+}
+
+.popup__tooltip-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 77px;
+    line-height: 110.02%;
+    text-align: center;
+    letter-spacing: -0.05em;
+    background: linear-gradient(145.08deg, #E61726 12.35%, #D4208C 83.63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.popup__tooltip-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    margin: 20px 0 0;
+    padding: 0;
+}
