@@ -28,3 +28,47 @@
     margin: 20px 0 0;
     padding: 0;
 }
+
+@media screen and (max-width: 1206px) {
+    .popup__tooltip-title {
+        font-size: 67px;
+    }
+
+    .popup__tooltip-text {
+        font-size: 19px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 807px) {
+    .popup__tooltip-title {
+        font-size: 55px;
+    }
+
+    .popup__tooltip-text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .popup__container_tooltip {
+        padding: 175.5px 0 174.95px;
+    }
+
+    .popup__tooltip-title {
+        font-size: 35px;
+    }
+
+    .popup__tooltip-text {
+        font-size: 14px;
+        line-height: 19px;
+        margin: 11.55px 57px 0;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .popup__tooltip-text {
+        margin: 11.55px 50.72px 0;
+    }
+}

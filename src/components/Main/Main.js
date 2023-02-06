@@ -1,3 +1,4 @@
+import React from 'react';
 import './Main.css';
 import mainPic from '../../images/main_pic.png';
 
