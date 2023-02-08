@@ -1,6 +1,6 @@
 export const BASE_URL = 'https://api.dating.com'
 
-export const register = ({ email, password }) => {
+export const register = (email, password) => {
   return fetch(`${BASE_URL}/identity`, {
     method: 'PUT',
     headers: {

@@ -1,31 +1,31 @@
 import React from 'react'
 import './Popup.css'
 
-function Popup(props) {
+function Popup({ isOpen, onClose, onRegister }) {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
 
-  function handlePasswordChange(e) {
+  const handlePasswordChange = (e) => {
     setPassword(e.target.value)
   }
 
-  function handleEmailChange(e) {
+  const handleEmailChange = (e) => {
     setEmail(e.target.value)
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    props.onRegister(email, password)
+    onRegister(email, password)
   }
 
   return (
-    <section className={`popup ${props.isOpen ? 'popup_opened' : ''}`}>
+    <section className={`popup ${isOpen ? 'popup_opened' : ''}`}>
       <div className="popup__container">
         <button
           type="button"
           className="popup__close"
           aria-label="To close popup"
-          onClick={props.onClose}
+          onClick={onClose}
         ></button>
         <h2 className="popup__title">
           To&nbsp;register, enter the mail to&nbsp;which our news is&nbsp;sent and&nbsp;set your

@@ -9,14 +9,15 @@ function App() {
   const [isPopupOpen, setIsPopupOpen] = React.useState(false)
   const [isTooltipOpen, setIsTooltipOpen] = React.useState(false)
 
-  function handleSignInClick() {
+  const handleSignInClick = () => {
     setIsPopupOpen(true)
   }
 
-  function closeAllPopups() {
+  const closeAllPopups = React.useCallback(() => {
     setIsPopupOpen(false)
     setIsTooltipOpen(false)
-  }
+
+  }, [])
 
   React.useEffect(() => {
     const closeByEscape = (e) => {
@@ -28,12 +29,13 @@ function App() {
     document.addEventListener('keydown', closeByEscape)
 
     return () => document.removeEventListener('keydown', closeByEscape)
-  }, [])
+  }, [closeAllPopups])
 
-  function onRegister(email, password) {
+  const onRegister = (email, password) => {
     api
       .register(email, password)
       .then(() => {
+        console.log(email)
         setIsTooltipOpen(true)
       })
       .catch((err) => {

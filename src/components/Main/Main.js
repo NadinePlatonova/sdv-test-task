@@ -2,7 +2,7 @@ import React from 'react'
 import './Main.css'
 import mainPic from '../../images/main_pic.png'
 
-function Main(props) {
+function Main({ onSignInPopupOpen }) {
   return (
     <main className="main">
       <img className="main__picture" src={mainPic} alt="People and heart in the center" />
@@ -13,7 +13,7 @@ function Main(props) {
           <li className="main__item">
             <button
               className="main__button"
-              onClick={props.onSignInPopupOpen}
+              onClick={onSignInPopupOpen}
               aria-label="Open popup to register"
             >
               Sign Up
