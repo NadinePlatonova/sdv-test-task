@@ -43,7 +43,6 @@ function Popup({ isOpen, onClose, onRegister }) {
             required
             pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
           />
-          <span className="popup__error" id="email-error"></span>
           <input
             value={password}
             onChange={handlePasswordChange}
@@ -55,7 +54,6 @@ function Popup({ isOpen, onClose, onRegister }) {
             required
             minLength="8"
           />
-          <span className="popup__error" id="password-error"></span>
           <button type="submit" className="popup__submit-button" aria-label="To submit">
             submit
           </button>

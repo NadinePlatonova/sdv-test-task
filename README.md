@@ -1,6 +1,10 @@
 # MarTech Test Task
 
-A single-page application with a registration form. After signing up, a popup appears with the message "Thank you...".
+An adaptive single-page application with a registration form. After signing up, a popup appears with the message "Thank you...".
+
+**[Click to view demo web site](https://nadineplatonova.github.io/sdv-test-task/)**
+
+![project demonstration](/demo.gif)
 
 ## Used technologies
 
@@ -21,10 +25,10 @@ This project was created with [Create React App](https://github.com/facebook/cre
 5. The form's submit should register with a PUT request for a resource https://api.dating.com/identity, with a body:
 
 ```
-        {
-        "email": "my@example.com",
-        "password": "12345678"
-        }
+{
+"email": "my@example.com",
+"password": "12345678"
+}
 ```
 
 6. After successful registration, the text Thank You... from the layout should be displayed.
