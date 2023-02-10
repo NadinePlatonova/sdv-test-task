@@ -47,6 +47,12 @@ Open the project directory in the terminal:
 cd sdv-test-task
 ```
 
+To install dependencies run:
+
+```
+npm install
+```
+
 To view the application in your browser run:
 
 ```bash
