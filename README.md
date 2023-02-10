@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# MarTech Test Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A single-page application with a registration form. After signing up, a popup appears with the message "Thank you...".
 
-## Available Scripts
+## Used technologies
 
-In the project directory, you can run:
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm start`
+**Stack:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- HTML;
+- CSS;
+- JavaScript, React.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Completed tasks
 
-### `npm test`
+1. To make up the page according to the [Figma layout](https://www.figma.com/file/OFhxh3RHOPL7tvxCpITcmj/UX-5285?node-id=0%3A1).
+2. The layout should be adaptive.
+3. Clicking on SIGN UP should open a popup with a registration form.
+4. The button with a cross should close the popup. The same thing should happen when pressing Esc with the popup open.
+5. The form's submit should register with a PUT request for a resource https://api.dating.com/identity, with a body:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+        {
+        "email": "my@example.com",
+        "password": "12345678"
+        }
+```
 
-### `npm run build`
+6. After successful registration, the text Thank You... from the layout should be displayed.
+7. Javascript should be in a separate file and loaded without blocking rendering.
+8. To upload the code to a public git repository.
+9. If the server needs to be built and started to open the page, the instruction should be at the root of the repository in the file README.md.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Steps to run the application locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open your local directory in the terminal and clone the repository from GitHub there:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd <path to your folder>
+git clone https://github.com/NadinePlatonova/sdv-test-task.git
+```
 
-### `npm run eject`
+Open the project directory in the terminal:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd sdv-test-task
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To view the application in your browser run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To build the application for production to the `build` folder run:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run build
+```
